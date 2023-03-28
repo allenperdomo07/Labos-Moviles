@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size_box_coin">160dp</dimen>
+    <dimen name="hight_gap">40dp</dimen>
+    <dimen name="normal_gap">16dp</dimen>
+    <dimen name="normal_extra_gap">96dp</dimen>
+    <dimen name="icon_size">140dp</dimen>
+</resources>

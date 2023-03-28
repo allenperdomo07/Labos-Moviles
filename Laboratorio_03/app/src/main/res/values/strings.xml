@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Laboratorio_03</string>
+    <string name="title_money">Cantidad de dinero</string>
+    <string name="five_cents_content_description">five cents icon</string>
+    <string name="ten_cents_content_description">ten cents icon</string>
+    <string name="quater_cents_icon_description">quater cents icon</string>
+    <string name="one_dollar_content_description">one dollar icon</string>
+    <string name="five_cents_value">$0.05</string>
+    <string name="ten_cents_value">$0.10</string>
+    <string name="quater_cents_value">$0.25</string>
+    <string name="one_dollar_value">$1.00</string>
+    <string name="total_amount">$ %s</string>
+</resources>
