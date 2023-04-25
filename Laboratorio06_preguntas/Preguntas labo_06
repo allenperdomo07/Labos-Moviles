@@ -1,0 +1,11 @@
+1. ¿En qué consiste el patrón de diseño Repository?
+R/ Es un patrón de diseño que aísla la capa de datos del resto de la aplicación. Dicha capa hace referencia a la parte
+que controla los datos y la lógica empresarial, separando los componentes visuales, lo que expone APIs coherentes
+de modo que el resto de la aplicación acceda a esos datos. Un repositorio puede resolver conflictos entre fuentes de datos (como modelos persistentes, servicios web y cachés)
+y centralizar los cambios en estos datos.
+2. ¿Qué es el ViewModel?
+R/ Es una lógica empresarial o un contenedor de estado a nivel de pantalla que expone el estado a la IU y
+encapsula la lógica empresarial relacionada. Su principal ventaja es que almacena en caché el estado y lo conserva
+durante los cambios de configuración, esto significa que la IU no tiene que recuperar datos cuando navegas entre
+actividades o si sigues cambios de configuración, como cuando rotas la pantalla.
+Log.d("NewMovieFragment", movieViewModel.getMovies().toString())
