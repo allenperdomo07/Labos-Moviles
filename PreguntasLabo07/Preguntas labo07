@@ -1,0 +1,22 @@
+1. ¿Qué ventajas tiene el utilizar LiveData?
+R/ Garantiza que la IU coincida con el estado de los datos.
+Sin fugas de memoria: Los observadores están vinculados a objetos Lifecycle y borran lo que crean cuando se destruye el ciclo de vida asociado.
+Actividades detenidas para evitar las fallas.
+No más control manual del ciclo de vida.
+Datos siempre actualizados.
+Cambios de configuración apropiados.
+2. ¿Qué patrón de diseño utiliza LiveData?
+R/ Por lo general, un objeto LiveData se almacena dentro de nuestro ViewModel, por lo que para poder implementar un LiveData se debe insertar un codigo fuente.
+Cada una de las variables de tipo MutableLiveData hacen referencia a los campos que se necesitan para crear una una nueva Movie.
+Además, cabe recalcar que el value dentro del MutableLiveData es el valor inicial que tomará nuestro LiveData, deesta forma podemos tener los datos de nuestra 
+aplicación cambiando a tiempo real; pero, aún no se ha conectado a nuestro IU, para poder lograrlo debemos hacer uso de DataBinding
+3. Menciona que se debe agregar al Gradle para poder implementar DataBinding.
+R/ Para poder implementar DataBinding, configura la opción de compilación dataBinding en true en el archivo build.gradle de tu módulo.
+4. ¿Qué es DataBinding? Menciona sus ventajas frente a findViewById
+R/ DataBinding es una función de Android que permite vincular los elementos de la interfaz de usuario (UI) de una aplicación directamente a los datos de la 
+aplicación, lo que significa que no es necesario realizar actualizaciones manuales para que la interfaz refleje los cambios en los datos. DataBinding utiliza una 
+sintaxis especial en XML para crear una conexión entre la UI y los datos, lo que facilita la implementación de patrones de arquitectura de software como el patrón
+MVVM (Model-View-ViewModel). En lugar de tener que actualizar manualmente los elementos de la UI en el código, DataBinding permite que la UI se actualice 
+automáticamente a medida que los datos cambian en la aplicación. Además, DataBinding proporciona una mayor eficiencia y rendimiento, ya que reduce la
+necesidad de hacer referencia a los elementos de la interfaz de usuario en el código y también disminuye la cantidad de código repetitivo necesario para mantener
+la sincronización de los datos y la UI.
