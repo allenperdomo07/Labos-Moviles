@@ -1,0 +1,12 @@
+1. ¿Qué es una coroutine en Kotlin y cómo se diferencia de un hilo tradicional?
+R/ Las coroutines son un mecanismo de programación que permite escribir código asíncrono de manera
+secuencial y estructurada en Kotlin. A diferencia de los hilos tradicionales, las coroutines son concurrencia
+cooperativa, lo que significa que el programador tiene el control para decidir cuándo se suspende y reanuda.
+Además, el uso de coroutines simplifica la programación asíncrona al proporcionar una sintaxis más clara y concisa
+en comparación con los enfoques tradicionales como los callbacks o las promesas. 
+2. ¿Cuál es la importancia de la suspensión en las coroutines y cómo se implementa?
+R/ La suspensión en las coroutines de Android se refiere a la capacidad de suspender momentáneamente la
+ejecución de una coroutine sin obstruir el main thread. Cuando se suspende una coroutine, el hilo que estaba
+utilizando se libera para que otras coroutines o acciones puedan utilizarlo. Como resultado, es posible desarrollar
+código asíncrono y no bloqueante que pueda manejar actividades largas o bloqueantes sin interferir con el hilo
+principal de la interfaz de usuario o hacer que la aplicación sea inutilizable.
